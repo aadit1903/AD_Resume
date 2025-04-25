@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="description" content="Aditya Kumar - SDE professional with expertise in C++, Python, JavaScript, Machine Learning and Web Development. MCA from Tezpur University.">
+    <meta name="keywords" content="Aditya Kumar, Software Developer, SDE internship, MCA, Tezpur University, C++, Python, JavaScript, Machine Learning, Web Development">
+    <meta name="author" content="Aditya Kumar">
+    <title>Aditya Kumar | Software Development Engineer</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect to improve font loading performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- HTML2PDF library for PDF conversion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Action buttons for print and download -->
+    <div class="action-buttons">
+        <button onclick="window.print()" class="action-button print-button" title="Print Resume">
+            <i class="fas fa-print"></i> Print
+        </button>
+        <button onclick="generatePDF()" class="action-button download-button" title="Download as PDF">
+            <i class="fas fa-file-pdf"></i> Download PDF
+        </button>
+    </div>
+
+    <!-- Main content wrapper for PDF generation -->
+    <div id="resume-content">
+
+        <!-- Header Section: Contains profile image, name, and contact info -->
+        <header class="section header">
+            <!-- Profile image with descriptive alt text -->
+            <img src="ADITYA_Photo.jpeg" alt="Aditya Kumar's Professional Photo" class="profile-img">
+            <div class="intro">
+                <!-- Main heading - your name -->
+                <h1>ADITYA KUMAR</h1>
+                <!-- Brief introduction -->
+                <p class="tagline">MCA Student at Tezpur University</p>
+                <!-- Contact information block -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <!-- mailto link for default email client -->
+                        <a href="mailto:adityakumar02062001@gmail.com">adityakumar02062001@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+917349833487">73498 33487</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Tezpur, Assam</span>
+                    </div>
+                </div>
+                <!-- Social and Professional Links - all set to open in new tabs -->
+                <div class="social-links">
+                    <a href="https://www.geeksforgeeks.org/user/adityakuma4u8g/" class="social-link" aria-label="GeeksForGeeks Profile" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-gripfire" aria-hidden="true"></i> GFG
+                    </a>
+                    <a href="https://leetcode.com/u/aadi_official1808/" class="social-link" aria-label="LeetCode Profile" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-code" aria-hidden="true"></i> LeetCode
+                    </a>
+                    <a href="https://github.com/aadit1903" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/aadiofiicial1808/" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Objective Section: Career goals and ambitions -->
+        <section class="section" id="objective">
+            <h2><i class="fas fa-bullseye" aria-hidden="true"></i> Objective</h2>
+            <p>Seeking an SDE internship to leverage my expertise in programming, algorithms, and software development. I aim to contribute to the development of scalable, efficient solutions while gaining hands-on experience and supporting the organization's success in a dynamic, growth-oriented environment.</p>
+        </section>
+
+        <!-- Education Section: Academic background presented in table format -->
+        <section class="section" id="education">
+            <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <p class="institution">Tezpur University, Tezpur, Assam</p>
+                    <p class="date">July 2023 - Present</p>
+                    <p class="grade">CGPA: 7.2</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p class="institution">TNB College, TMBU Bhagalpur, Bihar</p>
+                    <p class="date">July 2018 - August 2022</p>
+                    <p class="grade">Percentage: 72.44%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section: Highlights technical abilities -->
+        <section class="section" id="skills">
+            <h2><i class="fas fa-laptop-code" aria-hidden="true"></i> Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">C++</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">PyCharm</span>
+                        <span class="skill-pill">VS Code</span>
+                        <span class="skill-pill">Jupyter Notebook</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Platform</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">GitHub</span>
+                        <span class="skill-pill">LeetCode</span>
+                        <span class="skill-pill">Hacker Rank</span>
+                        <span class="skill-pill">Microsoft Teams</span>
+                        <span class="skill-pill">MS Office</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section: Showcase of professional work -->
+        <section class="section" id="projects">
+            <h2><i class="fas fa-project-diagram" aria-hidden="true"></i> Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <h3>Feedback System</h3>
+                    <p class="project-tech">HTML, CSS, PHP</p>
+                    <p class="project-date">March 2024 – May 2024</p>
+                    <p class="project-description">The system enables real-time feedback, fostering transparency and continuous improvement within team.</p>
+                    <a href="https://github.com/aadit1903/FeedbackSystem" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Project</a>
+                </div>
+                
+                <div class="project-item">
+                    <h3>House Price Predictor</h3>
+                    <p class="project-tech">NumPy, Matplotlib</p>
+                    <p class="project-date">October 2024 – November 2024</p>
+                    <p class="project-description">This project focuses on predicting house prices using machine learning concepts.</p>
+                    <a href="https://github.com/aadit1903/PRODIGY_ML_01" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Project</a>
+                </div>
+                
+                <div class="project-item">
+                    <h3>KMeans Clustering For Mall Customers</h3>
+                    <p class="project-tech">NumPy, Machine Learning</p>
+                    <p class="project-date">October 2024 – November 2024</p>
+                    <p class="project-description">This project demonstrates the application of KMeans clustering on dataset to segment customers based on their annual income and spending score.</p>
+                    <a href="https://github.com/aadit1903/PRODIGY_ML_02" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section" id="certifications">
+            <h2><i class="fas fa-certificate" aria-hidden="true"></i> Certifications</h2>
+            <ul class="certification-list">
+                <li>
+                    <span class="cert-title">The Joy of Computing using Python</span>
+                    <span class="cert-issuer">IIT Madras</span>
+                    <a href="https://drive.google.com/file/d/1j5tGO5lMVxYNfhQk6YQVkrekXvxjRN23/view?usp=sharing" class="cert-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Certificate</a>
+                </li>
+                <li>
+                    <span class="cert-title">Machine Learning Internship</span>
+                    <span class="cert-issuer">Prodigy InfoTech</span>
+                    <a href="https://drive.google.com/file/d/142olHK0J_8yIsKYhZJHVrRoN3OGuWxrK/view" class="cert-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Certificate</a>
+                </li>
+                <li>
+                    <span class="cert-title">Summer Internship Training</span>
+                    <span class="cert-issuer">NTPC Farakka</span>
+                    <a href="https://drive.google.com/file/d/1lNtlDZTqOGKXoi1xifS1_UxPZ1Evbzdl/view" class="cert-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Certificate</a>
+                </li>
+                <li>
+                    <span class="cert-title">AI & Data Science Bootcamp</span>
+                    <span class="cert-issuer">Tezpur University</span>
+                    <a href="https://drive.google.com/file/d/19882EYk1OomBQJQfan-RwlpAe6UVNwFK/view" class="cert-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Certificate</a>
+                </li>
+                <li>
+                    <span class="cert-title">CPP Bootcamp</span>
+                    <span class="cert-issuer">IIT Bombay</span>
+                    <a href="https://drive.google.com/file/d/1SHX76n4YrJ3ETdxd4EGzSgtcQ1piM97Y/view" class="cert-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Certificate</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="section" id="achievements">
+            <h2><i class="fas fa-trophy" aria-hidden="true"></i> Achievements</h2>
+            <ul class="achievement-list">
+                <li><span class="achievement-highlight">AIR 63</span> in TUEE 2023</li>
+                <li>MAHCET 2023 (<span class="achievement-highlight">99.2 percentile</span>)</li>
+                <li>UGC Net June 2024 (<span class="achievement-highlight">95.8 percentile</span>)</li>
+            </ul>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="section" id="languages">
+            <h2><i class="fas fa-language" aria-hidden="true"></i> Languages</h2>
+            <div class="language-container">
+                <span class="language-pill">English</span>
+                <span class="language-pill">Hindi</span>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="section footer">
+            <p>&copy; 2025 Aditya Kumar. All rights reserved.</p>
+            <p class="last-updated">Last Updated: April 2025</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for PDF generation -->
+    <script>
+        // Function to generate PDF from HTML content
+        function generatePDF() {
+            // Get the resume content element
+            const element = document.getElementById('resume-content');
+            
+            // Set options for PDF generation
+            const options = {
+                margin: 10,
+                filename: 'Aditya_Kumar_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            // Hide action buttons temporarily for PDF generation
+            document.querySelector('.action-buttons').style.display = 'none';
+            
+            // Generate PDF
+            html2pdf().from(element).set(options).save().then(() => {
+                // Show action buttons again after PDF generation
+                document.querySelector('.action-buttons').style.display = 'flex';
+            });
+        }
+
+        // Make all links open in new tab
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select all links except those with mailto: or tel:
+            const links = document.querySelectorAll('a:not([href^="mailto:"]):not([href^="tel:"])');
+            
+            // Add target="_blank" and rel attributes to each link
+            links.forEach(link => {
+                if (link.getAttribute('href') && link.getAttribute('href') !== '#') {
+                    link.setAttribute('target', '_blank');
+                    link.setAttribute('rel', 'noopener noreferrer');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
