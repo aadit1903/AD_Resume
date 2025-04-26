@@ -31,8 +31,6 @@ It showcases my academic background, technical skills, project experience, certi
 | [Feedback System](https://github.com/aadit1903/FeedbackSystem) | Real-time feedback platform fostering transparency and improvement | HTML, CSS, PHP |
 | [House Price Predictor](https://github.com/aadit1903/PRODIGY_ML_01) | Predicts house prices using ML techniques | NumPy, Matplotlib |
 | [Customer Segmentation (KMeans)](https://github.com/aadit1903/PRODIGY_ML_02) | Segments mall customers using KMeans clustering | Python, ML |
-| [Aditya_Resume](https://github.com/aadit1903/AD_Resume) | My Resume | HTML , CSS |
-
 ---
 
 ## 📜 Certifications
